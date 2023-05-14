@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Comp1 from './components/Comp1';
+import Comp2 from './components/Comp2';
+import Comp3 from './components/Comp3';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Comp1 send="ส่งแบบ props" />
+      <hr />
+      <Comp2 />
+      <hr />
+      <Comp3 />
+    </>
+    // <div className='container'>
+    //   <h1>Hello</h1>
+    //   <button>+</button>
+    //   <button>-</button>
+
+    //   <Comp1 />
+    //   <Comp2 />
+    // </div>
   );
 }
 
